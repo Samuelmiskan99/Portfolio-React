@@ -1,4 +1,4 @@
-import image from '/public/image.jpg';
+import image from '/image.jpg';
 import { motion } from 'framer-motion';
 const Hero = () => {
    return (
@@ -10,8 +10,12 @@ const Hero = () => {
                initial={{ y: -40, opacity: 0 }}
                animate={{ y: 0, opacity: 1 }}
                transition={{ duration: 0.8, delay: 0.2 }}
-               className='relative w-[200px] h-[200px] md:w-[250px] md:h-[250px] cursor-pointer rounded-full shadow-xl shadow-indigo-900 transition-all duration-300 hover:-translate-y-5 hover:scale-105 hover:shadow-2xl hover:shadow-indigo-600 overflow-hidden'>
-               <img src={image} className='w-full h-full object-cover' alt='' />
+               className='relative w-[200px] h-[200px] md:w-[250px] md:h-[250px] '>
+               <img
+                  src={image}
+                  className='w-full h-full object-cover cursor-pointer rounded-full shadow-xl shadow-indigo-900 transition-all duration-300 hover:-translate-y-5 hover:scale-105 hover:shadow-2xl hover:shadow-indigo-600 overflow-hidden'
+                  alt=''
+               />
             </motion.div>
             <motion.div
                initial={{ y: 40, opacity: 0 }}
@@ -22,7 +26,7 @@ const Hero = () => {
                   Samuel Miskan
                </h1>
                <h3 className='bg-gradient-to-r from-pink-500 to-blue-500 bg-clip-text text-transparent  text-2xl md:tex-3xl'>
-                  Web Developer & System Administrator
+                  Front End Developer & System Administrator
                </h3>
                <p className='md:text-base text-pretty text-sm text-gray-400'>
                   I am a fresh graduate with a Bachelors Degree in Informatics Engineering from

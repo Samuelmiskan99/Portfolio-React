@@ -1,5 +1,3 @@
-import React from 'react';
-
 // Utility function to generate random colors
 const getRandomColor = () => {
    const letters = '0123456789ABCDEF';
