@@ -33,6 +33,11 @@ const Navbar = () => {
                <li>Project</li>
             </a>
             <a
+               href='#timeline'
+               className='cursor-pointer opacity-70 transition-all duration-300 hover:opacity-100'>
+               <li>Timeline</li>
+            </a>
+            <a
                href='#contact'
                className='cursor-pointer opacity-70 transition-all duration-300 hover:opacity-100'>
                <li>Contact</li>
@@ -79,6 +84,11 @@ const Navbar = () => {
                      href='#project'
                      className='cursor-pointer opacity-70 transition-all duration-300 hover:opacity-100'>
                      <li>Project</li>
+                  </a>
+                  <a
+                     href='#timeline'
+                     className='cursor-pointer opacity-70 transition-all duration-300 hover:opacity-100'>
+                     <li>Timeline</li>
                   </a>
                   <a
                      href='#contact'

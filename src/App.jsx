@@ -13,8 +13,8 @@ function App() {
             <Navbar />
             <Hero />
             <Tech />
-            <Timeline />
             <Projects />
+            <Timeline />
             <Contact />
          </main>
       </>
