@@ -14,7 +14,7 @@ const ScrollReveal = ({ children }) => {
       <motion.div
          initial={{ opacity: 0, y: 100 }}
          whileInView={{ opacity: 1, y: 0 }}
-         viewport={{ once: true }}
+         viewport={{ once: false }} // Ubah ke `once: false`
          transition={{ duration: 0.5, delay: 0.2 }}>
          {children}
       </motion.div>
@@ -22,9 +22,11 @@ const ScrollReveal = ({ children }) => {
 };
 
 // Komponen ProjectCard untuk menampilkan detail proyek
-const ProjectCard = ({ project }) => {
+const ProjectCard = ({ project, index }) => {
    return (
-      <ScrollReveal>
+      <ScrollReveal delay={index * 0.1}>
+         {' '}
+         {/* Tambahkan delay berdasarkan indeks */}
          <div className='flex flex-col items-center gap-6 md:flex-row md:gap-10'>
             <img
                src={project.image}
@@ -55,6 +57,7 @@ ProjectCard.propTypes = {
       description: PropTypes.string.isRequired,
       technologies: PropTypes.arrayOf(PropTypes.string).isRequired,
    }).isRequired,
+   index: PropTypes.number.isRequired,
 };
 
 // Komponen utama Projects untuk menampilkan semua proyek
@@ -117,15 +120,15 @@ const Projects = () => {
    return (
       <div
          id='projects'
-         className='flex flex-col items-center justify-center min-h-screen w-full p-4 md:px-14 md:py-24 md:gap-10'>
+         className='flex flex-col items-center justify-center min-h-screen w-full p-4 md:px-14 md:py-24 md:gap-10 mt-10 '>
          <ScrollReveal>
-            <h1 className='text-4xl font-light text-white md:text-6xl mb-10 text-center'>
+            <h1 className='text-4xl font-light text-white md:text-6xl mb-20 text-center'>
                My Projects
             </h1>
          </ScrollReveal>
          <div className='flex flex-col gap-16 w-full max-w-[1000px] text-white'>
             {projectData.map((project, index) => (
-               <ProjectCard key={index} project={project} />
+               <ProjectCard key={index} project={project} index={index} />
             ))}
          </div>
       </div>

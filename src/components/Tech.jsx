@@ -55,7 +55,7 @@ const Tech = () => {
                initial='hidden'
                whileInView='visible'
                transition={{ duration: 0.5, delay: 0.2 }}>
-               <FaLinux className='cursor-pointer text-[80px] text-blue-700 transition-all duration-300 hover:-translate-y-5 sm:text-[100px] md:text-[120px]' />
+               <FaLinux className='cursor-pointer text-[80px] text-white transition-all duration-300 hover:-translate-y-5 sm:text-[100px] md:text-[120px]' />
             </motion.div>
             <motion.div
                variants={variants}
