@@ -4,6 +4,7 @@ import Tech from './components/Tech';
 import Timeline from './components/Timeline';
 import Contact from './components/Contact';
 import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 
 function App() {
    return (
@@ -16,6 +17,7 @@ function App() {
             <Projects />
             <Timeline />
             <Contact />
+            <Footer />
          </main>
       </>
    );

@@ -12,7 +12,8 @@ const Contact = () => {
             </h1>
             <p className='text-center text-lg font-semibold text-gray-500'>
                I am always interested in hearing about new projects, so if you reach me for any
-               reason, please feel free to contact me. Send me an E-Mail through this button below!
+               reason, please feel free to contact me via email samuelmiskan@gmail.com . Send me an
+               E-Mail through this button below!
             </p>
             <a
                target='_blank'
@@ -23,10 +24,6 @@ const Contact = () => {
          </div>
 
          {/* Footer with License and Copyright */}
-         <footer className='w-full text-center py-4 text-sm text-gray-500 border-t border-gray-300'>
-            <p>&copy; {new Date().getFullYear()} Samuel Miskan. All rights reserved.</p>
-            <p>Licensed under MIT License.</p>
-         </footer>
       </div>
    );
 };

@@ -109,18 +109,30 @@ const Navbar = () => {
                   </a>
                </ul>
                <ul className='flex flex-wrap gap-5'>
-                  <li className='cursor-pointer text-xl opacity-70 transition-all duration-300 hover:text-red-500 hover:opacity-100'>
+                  <a
+                     href='https://github.com/Samuelmiskan99'
+                     target='_blank'
+                     className='cursor-pointer text-xl opacity-70 transition-all duration-300 hover:text-red-500 hover:opacity-100'>
                      <BsGithub />
-                  </li>
-                  <li className='cursor-pointer text-xl opacity-70 transition-all duration-300 hover:text-blue-500 hover:opacity-100'>
+                  </a>
+                  <a
+                     href='https://instagram.com/samuelmiskan14'
+                     target='_blank'
+                     className='cursor-pointer text-xl opacity-70 transition-all duration-300 hover:text-blue-500 hover:opacity-100'>
                      <BsInstagram />
-                  </li>
-                  <li className='cursor-pointer text-xl opacity-70 transition-all duration-300 hover:text-gray-500 hover:opacity-100'>
+                  </a>
+                  <a
+                     href='https://linkedin.com/in/miskanhanock'
+                     target='_blank'
+                     className='cursor-pointer text-xl opacity-70 transition-all duration-300 hover:text-gray-500 hover:opacity-100'>
                      <BsLinkedin />
-                  </li>
-                  <li className='cursor-pointer text-xl opacity-70 transition-all duration-300 hover:text-yellow-500 hover:opacity-100'>
-                     <IoMdMail />
-                  </li>
+                  </a>
+                  <a
+                     href='https://youtube.com/@samuelmiskan5670'
+                     target='_blank'
+                     className='cursor-pointer text-xl opacity-70 transition-all duration-300 hover:text-yellow-500 hover:opacity-100'>
+                     <BsYoutube />
+                  </a>
                </ul>
             </div>
          )}
