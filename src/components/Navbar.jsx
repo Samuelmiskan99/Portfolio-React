@@ -65,7 +65,7 @@ const Navbar = () => {
             <a
                href='https://youtube.com/@samuelmiskan5670'
                target='_blank'
-               className='cursor-pointer text-xl opacity-70 transition-all duration-300 hover:text-yellow-500 hover:opacity-100'>
+               className='cursor-pointer text-xl opacity-70 transition-all duration-300 hover:text-red-500 hover:opacity-100'>
                <BsYoutube />
             </a>
          </ul>
@@ -130,7 +130,7 @@ const Navbar = () => {
                   <a
                      href='https://youtube.com/@samuelmiskan5670'
                      target='_blank'
-                     className='cursor-pointer text-xl opacity-70 transition-all duration-300 hover:text-yellow-500 hover:opacity-100'>
+                     className='cursor-pointer text-xl opacity-70 transition-all duration-300 hover:text-red-500 hover:opacity-100'>
                      <BsYoutube />
                   </a>
                </ul>
