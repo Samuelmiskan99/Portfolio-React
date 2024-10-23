@@ -4,9 +4,9 @@ import { motion } from 'framer-motion';
 import image1 from '/image1.jpg';
 import image2 from '/image2.jpg';
 import image3 from '/image3.jpg';
-import image4 from '/image4.jpg';
-import image5 from '/image5.jpg';
+import image8 from '/image8.jpg';
 import image6 from '/image6.jpg';
+import image7 from '/image7.jpg';
 
 // Komponen ScrollReveal untuk animasi
 const ScrollReveal = ({ children }) => {
@@ -95,18 +95,17 @@ const Projects = () => {
          technologies: ['React.js', 'Javascript', 'Node.js', 'Tailwind CSS', 'Axios'],
       },
       {
-         image: image4,
-         title: 'BMI Calculator',
+         image: image7,
+         title: 'Infinite Talk',
          description:
-            'A simple BMI calculator that you can use for free, this App includes your height and weight.',
-         technologies: ['React.js', 'Javascript', 'Node.js', 'React Redux', 'CSS3'],
+            'A place for Mentors and Mentees connect and grow! This is a mini-forum for mentors and mentees from Infinite Learning to collaborate and connect. In this forum, mentors and mentees can make posts and comment on each other’s posts to help or share information!.',
+         technologies: ['React.js', 'Javascript', 'Node.js', 'React Redux', 'CSS3', 'React Query'],
       },
       {
-         image: image5,
-         title: 'Movie List App',
-         description:
-            'This is a simple Movie List App that you can use for free. You can search for your favorite movie. This App uses TMDB API for demonstration.',
-         technologies: ['Html5', 'Javascript', 'TMDB API', 'CSS3'],
+         image: image8,
+         title: 'Grouper Detection With Yolov5',
+         description: 'Final Project for my thesis at Universitas Maritim Raja Ali Haji.',
+         technologies: ['Python', 'Yolov5', 'Streamlit'],
       },
       {
          image: image6,

@@ -1,7 +1,16 @@
 import { BiLogoJavascript, BiLogoNodejs, BiLogoReact, BiLogoTailwindCss } from 'react-icons/bi';
-import { FaCss3Alt, FaHtml5, FaLinux, FaRedhat, FaUnity, FaWordpress } from 'react-icons/fa';
+import {
+   FaCss3Alt,
+   FaHtml5,
+   FaLinux,
+   FaPython,
+   FaRedhat,
+   FaUnity,
+   FaWordpress,
+} from 'react-icons/fa';
 import { motion } from 'framer-motion';
 import { SiMysql, SiVite } from 'react-icons/si';
+import { RiFirebaseLine } from 'react-icons/ri';
 
 const Tech = () => {
    const variants = {
@@ -105,6 +114,20 @@ const Tech = () => {
                whileInView='visible'
                transition={{ duration: 0.5, delay: 0.2 }}>
                <SiVite className='cursor-pointer text-[80px] text-yellow-300 transition-all duration-300 hover:-translate-y-5 sm:text-[100px] md:text-[120px]' />
+            </motion.div>
+            <motion.div
+               variants={variants}
+               initial='hidden'
+               whileInView='visible'
+               transition={{ duration: 0.5, delay: 0.2 }}>
+               <RiFirebaseLine className='cursor-pointer text-[80px] text-yellow-700 transition-all duration-300 hover:-translate-y-5 sm:text-[100px] md:text-[120px]' />
+            </motion.div>
+            <motion.div
+               variants={variants}
+               initial='hidden'
+               whileInView='visible'
+               transition={{ duration: 0.5, delay: 0.2 }}>
+               <FaPython className='cursor-pointer text-[80px] text-blue-500 transition-all duration-300 hover:-translate-y-5 sm:text-[100px] md:text-[120px]' />
             </motion.div>
          </div>
       </div>
