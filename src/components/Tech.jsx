@@ -9,7 +9,7 @@ import {
    FaWordpress,
 } from 'react-icons/fa';
 import { motion } from 'framer-motion';
-import { SiMysql, SiVite } from 'react-icons/si';
+import { SiMysql, SiStreamlit, SiVite } from 'react-icons/si';
 import { RiFirebaseLine } from 'react-icons/ri';
 
 const Tech = () => {
@@ -128,6 +128,13 @@ const Tech = () => {
                whileInView='visible'
                transition={{ duration: 0.5, delay: 0.2 }}>
                <FaPython className='cursor-pointer text-[80px] text-blue-500 transition-all duration-300 hover:-translate-y-5 sm:text-[100px] md:text-[120px]' />
+            </motion.div>
+            <motion.div
+               variants={variants}
+               initial='hidden'
+               whileInView='visible'
+               transition={{ duration: 0.5, delay: 0.2 }}>
+               <SiStreamlit className='cursor-pointer text-[80px] text-orange-400 transition-all duration-300 hover:-translate-y-5 sm:text-[100px] md:text-[120px]' />
             </motion.div>
          </div>
       </div>
