@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import Hero from './components/Hero';
 import Projects from './components/Projects';
 import Tech from './components/Tech';
@@ -10,7 +10,8 @@ import { BsMoonStarsFill } from 'react-icons/bs';
 import { CiSun } from 'react-icons/ci';
 
 function App() {
-   const [isDarkMode, setIsDarkMode] = useState(false);
+   // Set default to dark mode
+   const [isDarkMode, setIsDarkMode] = useState(true);
 
    // Toggle dark mode and save the theme to local storage
    const toggleDarkMode = () => {
@@ -21,7 +22,10 @@ function App() {
    // Load saved theme preference on mount
    useEffect(() => {
       const savedTheme = localStorage.getItem('theme');
-      if (savedTheme === 'dark') {
+      if (savedTheme) {
+         setIsDarkMode(savedTheme === 'dark');
+      } else {
+         // Set default mode to dark if there's no saved theme
          setIsDarkMode(true);
       }
    }, []);
