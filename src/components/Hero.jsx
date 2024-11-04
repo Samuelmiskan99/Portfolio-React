@@ -1,5 +1,6 @@
 import image from '/image.jpg';
 import { motion } from 'framer-motion';
+
 const Hero = () => {
    return (
       <div
@@ -22,21 +23,27 @@ const Hero = () => {
                animate={{ y: 0, opacity: 1 }}
                transition={{ duration: 0.8, delay: 0.2 }}
                className='flex max-w-[600px] flex-col items-center justify-center gap-3 text-center'>
-               <h1 className='bg-gradient-to-r from-blue-500 to-pink-500 bg-clip-text text-transparent  text-5xl font-light md:tex-7xl'>
+               <h1 className='bg-gradient-to-r from-blue-500 to-pink-500 bg-clip-text text-transparent text-5xl font-light md:text-7xl'>
                   Samuel Miskan
                </h1>
-               <h3 className='bg-gradient-to-r from-pink-500 to-blue-500 bg-clip-text text-transparent  text-2xl md:tex-3xl'>
+               <h3 className='bg-gradient-to-r from-pink-500 to-blue-500 bg-clip-text text-transparent text-2xl md:text-3xl'>
                   Front End Developer & System Administrator
                </h3>
                <p className='md:text-base text-pretty text-sm text-gray-400'>
-                  I am a fresh graduate with a Bachelors Degree in Informatics Engineering from
-                  Maritim Raja Ali Haji University with focus on Computer Engineering. I have an
+                  {`I am a fresh graduate with a Bachelor's Degree in Informatics Engineering from
+                  Maritim Raja Ali Haji University with a focus on Computer Engineering. I have
                   experience from internships and university projects in Computer Vision, Frontend
-                  Developer and Linux Operating System. Proven ability to work effectively both
+                  Development, and Linux Operating System. Proven ability to work effectively both
                   independently and as part of a team. Excellent communication, problem-solving, and
                   time management skills. I am eager to apply knowledge and skills in a dynamic and
-                  challenging environment
+                  challenging environment.`}
                </p>
+               <a
+                  href='/public/resume/my-resume.pdf' // Path to your resume file
+                  download='Samuel_Miskan_Resume.pdf'
+                  className='mt-5 px-6 py-2 bg-indigo-950 text-white rounded-full hover:bg-slate-900 transition duration-300'>
+                  Download Resume
+               </a>
             </motion.div>
          </div>
       </div>
