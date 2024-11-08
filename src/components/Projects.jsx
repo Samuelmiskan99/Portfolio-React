@@ -43,6 +43,16 @@ const ProjectCard = ({ project, index }) => {
                      </span>
                   ))}
                </div>
+               {/* Add Demo Link */}
+               {project.demoLink && (
+                  <a
+                     href={project.demoLink}
+                     target='_blank'
+                     rel='noopener noreferrer'
+                     className=' rounded-lg bg-indigo-700 w-fit px-4 py-1 text-sm  '>
+                     View Demo
+                  </a>
+               )}
             </div>
          </div>
       </ScrollReveal>
@@ -113,6 +123,7 @@ const Projects = () => {
          description:
             'This Todo List application is developed using React.js and utilizes local storage to persist tasks. Users can add, edit, mark tasks as completed, and delete tasks from their list...',
          technologies: ['React.js', 'Javascript', 'Node.js', 'CSS3', 'Tailwind CSS'],
+         demoLink: 'https://react-todo-app-ten.vercel.app/',
       },
    ];
 
