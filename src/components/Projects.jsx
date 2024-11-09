@@ -79,6 +79,7 @@ const Projects = () => {
          description:
             'A child stranded on an island has a mission to save their homeland, which is on another island, by planting 5 magical seeds that can restore the environment from harmful toxic waste...',
          technologies: ['C#', 'Unity', 'Blender', 'Figma'],
+         demoLink: 'https://www.youtube.com/watch?v=w7ywcHq0SVY&t=150s',
       },
       {
          image: image2,
@@ -96,6 +97,7 @@ const Projects = () => {
             'MongoDB',
             'Firebase',
          ],
+         demoLink: 'https://ayf-fe4.netlify.app/',
       },
       {
          image: image3,
@@ -103,6 +105,7 @@ const Projects = () => {
          description:
             'This CRUD application is built with React.js and utilizes Tailwind CSS for styling. The app allows users to perform basic operations on user data, such as adding, editing, and deleting users.',
          technologies: ['React.js', 'Javascript', 'Node.js', 'Tailwind CSS', 'Axios'],
+         demoLink: 'https://crud-api-app-v10.vercel.app/',
       },
       {
          image: image7,
@@ -110,6 +113,7 @@ const Projects = () => {
          description:
             'A place for Mentors and Mentees connect and grow! This is a mini-forum for mentors and mentees from Infinite Learning to collaborate and connect. In this forum, mentors and mentees can make posts and comment on each other’s posts to help or share information!.',
          technologies: ['React.js', 'Javascript', 'Node.js', 'React Redux', 'CSS3', 'React Query'],
+         demoLink: 'https://github.com/arifian853/InfiniteTalk',
       },
       {
          image: image8,
@@ -123,7 +127,7 @@ const Projects = () => {
          description:
             'This Todo List application is developed using React.js and utilizes local storage to persist tasks. Users can add, edit, mark tasks as completed, and delete tasks from their list...',
          technologies: ['React.js', 'Javascript', 'Node.js', 'CSS3', 'Tailwind CSS'],
-         demoLink: 'https://react-todo-app-ten.vercel.app/',
+         demoLink: 'https://todo-list-app-v1-0.vercel.app/',
       },
    ];
 
